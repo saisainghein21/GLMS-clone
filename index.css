@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
     width: 100%;
@@ -45,41 +46,63 @@ body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .signin input{
-    border: none;
-    background-color: #E8F0FE;
+    border: 1px solid rgb(138, 138, 138);
+    /* background-color: #E8F0FE; */
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
 }
-.signin .input_signin{
+.input_signin, .input_password{
     width: 100%;
-    height: 2rem;
-    padding: 0.5rem 1rem;
+    height: 2.5rem;
+    padding: 0.75rem 1.25rem;
     margin-bottom: 1rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     border-radius: 0.2rem;
+}
+.password_options{
+    display: flex;
 }
 .signin .remember_username{
     font-size: 0.8rem;
     font-weight: bold;
     color: grey;
-    padding-right: 5rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.signin input:active,
+.signin input:focus{
+    border: 1px solid black;
+    outline: none;
+}
+
+.pw_cb{
+    display: flex;
+    gap: 0.5em;
+}
+
 .signin .forgot_password{
     font-size: 0.8rem;
     font-weight: bold;
     color: #62a8eb;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto;
 }
 .signin .forgot_password:hover{
     color: black;
     text-decoration: underline;
 }
-.signin a button{
+.signin a{
+    display: block;
     border: none;
     background-color: var(--gusto-signature-color);
     color: var(--white-color);
-    width: 22.5rem;
-    height: 2rem;
+    width: 100%;
+    height: 2.5rem;
     border-radius: 0.2rem;
     margin-top: 3rem;
+    cursor: pointer;
+    text-align: center;
+    line-height: 2.5rem;
+    text-decoration: none;
+    font-weight: 600;
 }
