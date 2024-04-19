@@ -1,0 +1,85 @@
+:root{
+    --gusto-signature-color: #005687;
+    --white-color: white;
+    --text-black-color: black;
+}
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.logo img{
+    height: 100vh;
+}
+.glms{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.inner_glms{
+    width: 70%;
+}
+.glms_logo img{
+    width: 100%;
+}
+.signin h3{
+    margin: 2rem 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.signin input{
+    border: none;
+    background-color: #E8F0FE;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.signin .input_signin{
+    width: 100%;
+    height: 2rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+}
+.signin .remember_username{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: grey;
+    padding-right: 5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.signin .forgot_password{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #62a8eb;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.signin .forgot_password:hover{
+    color: black;
+    text-decoration: underline;
+}
+.signin a button{
+    border: none;
+    background-color: var(--gusto-signature-color);
+    color: var(--white-color);
+    width: 22.5rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+    margin-top: 3rem;
+}
